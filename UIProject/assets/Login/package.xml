@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="lgfi3tnc">
+  <resources>
+    <component id="bl891" name="Login_Test.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="" path="..\Assets\Resources\Login" packageCount="2"/>
+</packageDescription>

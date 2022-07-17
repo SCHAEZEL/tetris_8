@@ -1,0 +1,11 @@
+bl891.xml|368|<component size="1920,1080">
+  <displayList>
+    <graph id="n0_bl89" name="n0" xy="79,677" size="397,282" type="rect" fillColor="#ff0000ff"/>
+    <graph id="n1_bl89" name="n1" xy="1448,675" size="431,233" type="rect" fillColor="#ff0000ff"/>
+    <graph id="n2_bl89" name="n2" xy="703,799" size="282,239" type="rect" fillColor="#ff0000ff"/>
+  </displayList>
+</component>package.xml|186|<packageDescription id="lgfi3tnc" name="Login">
+  <resources>
+    <component id="bl891" name="Login_Test" path="/" size="1920,1080" exported="true"/>
+  </resources>
+</packageDescription>

@@ -1,0 +1,9 @@
+/Library
+/Logs
+/obj
+/Temp
+/UIProject/.objs
+/.vscode
+/Assets/Lua/.vscode
+/Assets/StreamingAssets
+
