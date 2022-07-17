@@ -25,8 +25,17 @@ public class Block : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider collision){
+    void OnTriggerEnter2D(Collider2D collision){
         // entity.transform.Translate(new Vector2(0,0));
+        //Debug.Log("111111");
     }
 
+    void OnCollisionEnter2D(Collision2D collision){
+        // entity.transform.Translate(new Vector2(0,0));
+        if(collision.gameObject.CompareTag("block")){
+            Debug.Log("Destory");
+            Destroy(this);
+        }
+        
+    }
 }
