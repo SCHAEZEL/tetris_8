@@ -26,7 +26,7 @@ public class Block : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider collision){
-        entity.transform.Translate(new Vector2(0,0));
+        // entity.transform.Translate(new Vector2(0,0));
     }
 
 }

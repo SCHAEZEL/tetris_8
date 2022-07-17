@@ -6,17 +6,17 @@ public class BlockMove : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject block;
-    //Rigidbody2D rb;
+    Rigidbody2D rb;
     public float Speed = 5f;
     void Start()
     {
-        //rb = GetComponent<Rigidbody2D>();
-        //rb.velocity = new Vector2(0, -30);
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(0, -30);
     }
 
     // Update is called once per frames
     void FixedUpdate(){
-        block.transform.Translate(new Vector2(0,-3));
+        // block.transform.Translate(new Vector2(0,-3));
     }
 
 
