@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private float energy = 0;
 
     bool jump;
-    
+    float move;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +20,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         float move = Input.GetAxis("Horizontal");
+        move *=speed;
         bool jump = Input.GetButton("Jump");
-
-        cc.Move(move, jump);
     }
-
-    private void FixedUpdate(){
-
+    
+    void FixedUpdate(){
+        cc.Move(move, jump);
     }
 }

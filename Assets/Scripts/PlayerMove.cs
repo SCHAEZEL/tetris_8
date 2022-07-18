@@ -70,6 +70,7 @@ public class PlayerMove : MonoBehaviour
     public void Move(float move, bool jump)
     {
         // 玩家在地面时，或者可以空中控制时，才能移动
+        
         if (m_Grounded || canAirControl)
         {
             // 输入变量move决定横向速度

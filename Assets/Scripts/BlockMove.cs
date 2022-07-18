@@ -22,16 +22,16 @@ public class BlockMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)){
+        if (Input.GetKeyDown(KeyCode.LeftArrow)){
             block.transform.position = new Vector2(block.transform.position.x - 30, block.transform.position.y);
         }
-        else if (Input.GetKeyDown(KeyCode.D)){
+        else if (Input.GetKeyDown(KeyCode.RightArrow)){
             block.transform.position = new Vector2(block.transform.position.x + 30, block.transform.position.y);
         }
-        else if (Input.GetKeyDown(KeyCode.S)){
+        else if (Input.GetKeyDown(KeyCode.DownArrow)){
             block.transform.position = new Vector2(block.transform.position.x, block.transform.position.y - 30);
         }
-        else if (Input.GetKeyDown(KeyCode.Space)){
+        else if (Input.GetKeyDown(KeyCode.KeypadEnter)){
             block.transform.position = new Vector2(block.transform.position.x, 0);
         }
     }
