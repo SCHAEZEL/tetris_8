@@ -35,9 +35,7 @@ public class Block : MonoBehaviour
         // entity.transform.Translate(new Vector2(0,0));
         if(collision.gameObject.CompareTag("FreezBlock")){
             Debug.Log("111111");
-            if(!check){
-                //findAllBlock(this.gameObject);
-            }
+            findAllBlock(this.gameObject);
             //Destroy(this.gameObject);
         }
         else if(collision.gameObject.CompareTag("ground")){
@@ -47,30 +45,26 @@ public class Block : MonoBehaviour
     }
 
     void findAllBlock(GameObject b){
-        freezBlock();
-        if(b != null && !check){
-            
+        if(!check){
+            freezBlock();
+            check = true;
             if(up != null){
                 Block upB = up.GetComponent<Block>();
-                upB.check = true;
                 upB.findAllBlock(up);
                 Debug.Log("UP");
             }
             if(down != null){
                 Block downB = down.GetComponent<Block>();
-                downB.check = true;
                 downB.findAllBlock(down);
                 Debug.Log("down");
             }
             if(left != null){
                 Block leftB = left.GetComponent<Block>();
-                leftB.check = true;
                 leftB.findAllBlock(left);
                 Debug.Log("left");
             }
             if(right != null){
                 Block rightB = right.GetComponent<Block>();
-                rightB.check = true;
                 rightB.findAllBlock(right);
                 Debug.Log("right");
             }
@@ -80,6 +74,8 @@ public class Block : MonoBehaviour
 
     void freezBlock(){
         rb.bodyType = RigidbodyType2D.Static;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        entity.GetComponent<BlockMove>().enabled =false;
         this.gameObject.tag = "FreezBlock";
     }
 }

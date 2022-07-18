@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cc60f3f944d445bfb96fb17c2b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 4160565172775993541}
   up: {fileID: 4160565173595294777}
   down: {fileID: 4160565173706323562}
   left: {fileID: 0}
@@ -110,7 +110,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160565172453299506}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &8284564972754864365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,6 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4160565172775993595}
   - component: {fileID: 1846148977359096842}
+  - component: {fileID: 2675517344774584547}
   m_Layer: 0
   m_Name: Block_I
   m_TagString: Untagged
@@ -192,7 +193,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160565172775993541}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -204,7 +205,20 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
+--- !u!114 &2675517344774584547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160565172775993541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332d31b363b1c6a4b8b432b02648ffac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
 --- !u!1 &4160565173111967895
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cc60f3f944d445bfb96fb17c2b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 4160565172775993541}
   up: {fileID: 0}
   down: {fileID: 4160565173595294777}
   left: {fileID: 0}
@@ -341,7 +355,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160565173111967895}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -353,7 +367,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &4160565173595294777
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cc60f3f944d445bfb96fb17c2b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 4160565172775993541}
   up: {fileID: 4160565173111967895}
   down: {fileID: 4160565172453299506}
   left: {fileID: 0}
@@ -464,7 +478,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160565173595294777}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -476,7 +490,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &4160565173595294783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -600,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cc60f3f944d445bfb96fb17c2b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 4160565172775993541}
   up: {fileID: 4160565172453299506}
   down: {fileID: 0}
   left: {fileID: 0}
@@ -613,7 +627,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4160565173706323562}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -625,7 +639,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &3523459836724639754
 BoxCollider2D:
   m_ObjectHideFlags: 0

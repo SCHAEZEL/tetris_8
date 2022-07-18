@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3837207951100020353}
+  - component: {fileID: 8239151462278376059}
+  - component: {fileID: 7606859239867395833}
   m_Layer: 0
   m_Name: Block_T
   m_TagString: Untagged
@@ -34,6 +36,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &8239151462278376059
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837207951100020359}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &7606859239867395833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837207951100020359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332d31b363b1c6a4b8b432b02648ffac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 3837207951100020359}
+  Speed: 5
 --- !u!1 &3837207951530143241
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,7 +86,7 @@ GameObject:
   - component: {fileID: 3837207951530143242}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +172,7 @@ MonoBehaviour:
   up: {fileID: 3837207952864737081}
   down: {fileID: 0}
   left: {fileID: 3837207952405433250}
-  right: {fileID: 3837207952405433250}
+  right: {fileID: 3837207952602521760}
 --- !u!61 &3837207951530143243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +207,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837207951530143241}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -182,7 +219,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &3837207952405433250
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +235,7 @@ GameObject:
   - component: {fileID: 4141980612277573992}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,7 +330,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837207952405433250}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -305,7 +342,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &4141980612277573992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -347,7 +384,7 @@ GameObject:
   - component: {fileID: 9054335342724186451}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,7 +479,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837207952602521760}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -454,7 +491,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &9054335342724186451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -496,7 +533,7 @@ GameObject:
   - component: {fileID: 7099959540780698258}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,7 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entity: {fileID: 3837207951100020359}
   up: {fileID: 0}
-  down: {fileID: 0}
+  down: {fileID: 3837207951530143241}
   left: {fileID: 0}
   right: {fileID: 0}
 --- !u!50 &6794682748179658292
@@ -591,7 +628,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837207952864737081}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -603,7 +640,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &7099959540780698258
 BoxCollider2D:
   m_ObjectHideFlags: 0
