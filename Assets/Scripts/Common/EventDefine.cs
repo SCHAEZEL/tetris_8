@@ -1,0 +1,19 @@
+﻿public enum EventDefine
+{
+    ShowGamePanel,
+    DecidePath,
+    AddScore,
+    UpdateScoreText,
+    AddDiamond,
+    UpdateDiamondText,
+    ShowGameOverPanel,
+    ShowShopPanel,
+    ItemPurchase,
+    ChangeSkin,
+    ShowMainPanel,
+    ShowHint,
+    ShowResetPanel,
+    ShowRankPanel,
+    PlayClickAudio,
+    SetAudio
+}
